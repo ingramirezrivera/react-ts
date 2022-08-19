@@ -1,12 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
+import Header from './components/Header';
+import Title from './components/Title';
 import './App.css';
+import ProductList from './components/ProductList';
 
 function App(): JSX.Element {
   return (
     <div className="App">
-      <h1 className='text-blue-500 font-bold '>Hola Typescript</h1>
-      
+      <Header name="TypeShoppping"/>
+      <div className='p-4'>
+        <Title title='Te doy la bienvenida a tu primera tienda' />
+        <ProductList />
+      </div>
     </div>
   );
 }
